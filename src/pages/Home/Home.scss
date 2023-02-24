@@ -1,0 +1,15 @@
+@use '../../assets/scss/variables.scss' as *;
+@use '../../assets/scss/mixins.scss' as *;
+@use '../../assets/scss/functions.scss' as *;
+
+.home {
+  display: grid;
+  min-height: calc(100vh - rem(68));
+  place-items: center;
+  place-content: center;
+  text-align: center;
+  &__img {
+    max-height: rem(100);
+    margin: rem(20) auto;
+  }
+}

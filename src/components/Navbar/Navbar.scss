@@ -1,0 +1,31 @@
+@use '../../assets/scss/variables.scss' as *;
+@use '../../assets/scss/mixins.scss' as *;
+@use '../../assets/scss/functions.scss' as *;
+
+.nav {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  padding: rem(16) 0;
+  position: sticky;
+  top: 0;
+  
+  .container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: $clr-primary;
+    font-size: rem(24);
+    font-weight: 700;
+  }
+  &__list {
+    display: flex;
+    gap: rem(16);
+    list-style: none;
+    
+    a {
+      color: $clr-black;
+      text-decoration: none;
+    }
+  }
+}

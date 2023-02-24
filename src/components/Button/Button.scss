@@ -1,0 +1,34 @@
+@use '../../assets/scss/variables.scss' as *;
+@use '../../assets/scss/mixins.scss' as *;
+@use '../../assets/scss/functions.scss' as *;
+
+.btn {
+  border-radius: rem(4);
+  cursor: pointer;
+  font-weight: 500;
+  
+  &--primary {
+    background-color: $clr-primary;
+    border: rem(1) solid $clr-primary;
+    color: $clr-white;
+  }
+  &--outline {
+    background-color: transparent;
+    border: rem(1) solid $clr-primary;
+    color: $clr-primary;
+  }
+  &--regular {
+    padding: rem(8) rem(24);
+  }
+  &--small {
+    padding: 0 0;
+  }
+  &--large {
+    padding: rem(16) rem(48);
+  }
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,17 @@
+// Fonts
+$fonts: 'Space Grotesk', sans-serif;
+
+// Colors
+$clr-primary: #38bdf8;
+$clr-primary-faded: #a5f3fc;
+$clr-white: #ffffff;
+$clr-black: #000000;
+
+// Breakpoints
+$breakpoints-up: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px,
+);
